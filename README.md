@@ -17,7 +17,7 @@ Requires a vCenter Credentials file "vCenter.cred" created using the VICredentia
 Schedule nightly (or less frequently) using Windows Task Scheduler or similar eg. `C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe -PSConsoleFile "C:\Program Files (x86)\VMware\Infrastructure\vSphere PowerCLI\vim.psc1" "& "C:\ScriptPath\vsphere-showback.ps1" >logfile.log`
 
 ### Cost Calculator Tool
-An Excel format calculator tool `Infra-Cost-Tool.xslx` is included to help determine your monthly per-host and/or per-VM costs from a more traditional spend (such as the typical 3-year capitalized hardware with 3-year operationalized support model)
+An Excel format calculator tool `Infra-Cost-Calc-Tool.xslx` is included to help determine your monthly per-host and/or per-VM costs from a more traditional spend (such as the typical 3-year capitalized hardware with 3-year operationalized support model)
 
 ## Contributing
 
