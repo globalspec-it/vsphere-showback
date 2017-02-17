@@ -25,17 +25,9 @@ C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe -PSConsoleFile "C:\Pro
 ### Cost Calculator Tool
 An Excel format calculator tool `Infra-Cost-Calc-Tool.xslx` is included to help determine your monthly per-host and/or per-VM costs from a more traditional spend (such as the typical 3-year capitalized hardware with 3-year operationalized support model)
 
-## Contributing
-
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
-
 ## History
 
-17-Feb-2017: Initial commit
+17-Feb-2017: Initial script
 
 ## Credits
 
