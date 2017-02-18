@@ -10,6 +10,10 @@ this tool should work as well assuming you can get all of your individual costs 
 
 Requires VMware PowerCLI to be installed on the host running the script. See: www.vmware.com/go/powercli
 
+## Screenshot
+
+![Screenshot](Screen Shot 2017-02-18 at 3.37.32 PM.png)
+
 ## Usage
 
 Requires a vCenter Credentials file "vCenter.cred" created using the VICredentialStoreItem tool:
