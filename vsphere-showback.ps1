@@ -17,11 +17,11 @@
   (eg. New-VICredentialStoreItem -host vcenter-host.domain.com -user username -password ****** -file)
 
 .INPUTS
-  Enter all costs in USD, monthly (eg. 3 year cost divided by 36 months is typical)
+  Enter all costs in USD, monthly (eg. 3 year cost (divided by 36 months) is a typical use case)
 
   *Fixed costs
-    These don't change based on VM configuration but need to be
-    calculated based on some assumptions around maximum number of VMs per host.
+    These don't change based on VM configuration but need to be calculated
+     based on some assumptions around maximum number of VMs per host.
     $fixedInfra - costs such as server hardware and support, and infrastructure
       software and support such as vSphere licensing, backup software, anti-virus
       divided by the total number of VMs your environment supports
@@ -32,8 +32,8 @@
       You can also consider monitoring and/or managed services if needed in here too.
 
   *Software licensing costs
-    These are also fixed costs, and need to rely on
-    the same environment assumptions as the infrastructure and hosting costs above
+    These are also fixed costs, and need to rely on the same environment assumptions
+     as the infrastructure and hosting costs above
     $fixedWin - cost of Windows Datacenter virtual host licensing rights
       (eg. per socket / 2) divided then by the total max. number of VMs
     $fixedRHEL - cost of Red Hat Enterprise subscription, one per host, then
@@ -47,18 +47,18 @@
       for products licensed by core (eg. Veeam) as those would be included above.  You
       can include them however if they are licensed by front-end or back-end capacity (eg. Commvault)
     $varCPUPerProc - This one typically requires some thought, but can basically be
-      you sever host costs (hardware and support) per month, divided by the total cores of the
+      your sever host costs (hardware and support) per month, divided by the total cores of the
       infrastructure (eg. 12 hosts with 28 cores per host = total of 336 cores).  You
       then need to include an assumption of vCPU:pCPU ratio (eg. 4:1) as well.
-    $varMemPerGB - This one is tricky too because you need to know how much you pay for
-      RAM in a host vs. total server cost (be sure to NOT include memory cost in $varCPUPerProc)
+    $varMemPerGB - This one is tricky too because you need to know how much you pay for the
+      RAM in a host vs. total server cost (be sure to NOT include this memory cost in $varCPUPerProc too)
 
  .LIMITATIONS
-  - Does not handle costing of operating system licensing other than Windows Server or Red Hat Enterprise
+  - Does not handle costing of operating system licensing other than Windows Server or Red Hat Enterprise.
   - This script will OVERWRITE anything already in the vCenter Notes field so BE VERY CAREFUL!
   - The script can handle the notes field having Veeam backup data in it already (the only use case)
     In this scenario it will append the Veeam data to the cost data ONLY when you run the cost script after
-    you Veeam backups are completed
+    your Veeam backups are completed.  If the VM doesnt have Veeam data it simply overwrites as usual.
 
  .USAGE
    Schedule nightly (or less frequently) using Windows Task Scheduler or similar.
