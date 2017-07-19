@@ -12,7 +12,7 @@ Requires VMware PowerCLI to be installed on the host running the script. See: ww
 
 ## Screenshot
 
-![Screenshot](Screen Shot 2017-02-18 at 3.37.32 PM.png)
+![Screenshot](https://github.com/ieeeglobalspec/vsphere-showback/blob/master/Screen%20Shot%202017-02-18%20at%203.37.32%20PM.png?raw=true)
 
 ## Usage
 
